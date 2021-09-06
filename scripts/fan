@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+fan="$(istats fan speed --no-graphs --no-labels)"
+CPU="$(istats extra TCXC --no-graphs --no-labels)"
+
+echo -e "Fan: ${fan} CPU: ${CPU}"

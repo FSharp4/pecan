@@ -200,11 +200,33 @@
   box-shadow: var(--shadow-inner, 0px 1px 1px 1px rgba(0, 0, 0, 0.18));
 }
 
+.pecanfan {
+  font: var(--font-size, 12px) var(--font, Menlo);
+  background-color: var(--background-network, var(--color3, #222));
+  opacity: var(--opacity-inner, 1);
+  color: var(--color13, var(--background, #eee));
+  position: absolute;
+  display: inline-block;
+  top: var(--alignment-top, 0);
+  right: auto;
+  bottom: var(--alignment-bottom, auto);
+  left: 25%;
+  padding: 0 var(--text-padding, 1ch);
+  margin-top: calc(var(--border, 3px) + var(--padding-top, 10px));
+  margin-bottom: calc(var(--border, 3px) + var(--padding-top, 10px));
+  line-height: calc(var(--height, 36px) - calc(var(--border, 3px) * 2));
+  border-top-left-radius: var(--border-radius-inner, 3px);
+  border-top-right-radius: var(--border-radius-inner, 3px);
+  border-bottom-right-radius: var(--border-radius-inner, 3px);
+  border-bottom-left-radius: var(--border-radius-inner, 3px);
+  box-shadow: var(--shadow-inner, 0px 1px 1px 1px rgba(0, 0, 0, 0.18));
+}
+
 /* date -- center */
 .pecandate {
   font: var(--font-size, 12px) var(--font, Menlo);
   color: var(--foreground-date, var(--color7, #eee));
-  background-color: var(--background-date, var(--background, #222));
+  background-color: var(--color12, var(--background, #222));
   opacity: var(--opacity-inner, 1);
   position: absolute;
   display: inline-block;
@@ -240,6 +262,33 @@
   margin-top: calc(var(--padding-top, 10px) + var(--border, 3px));
   margin-right: calc(
     var(--padding-right, 10px) + calc(var(--text-padding, 1ch) * 2) + 9ch +
+      calc(var(--border, 3px) * 2)
+  );
+  margin-bottom: calc(var(--padding-top, 10px) + var(--border, 3px));
+  line-height: calc(var(--height, 36px) - calc(var(--border, 3px) * 2));
+  border-top-left-radius: var(--border-radius-inner, 3px);
+  border-top-right-radius: var(--border-radius-inner, 3px);
+  border-bottom-right-radius: var(--border-radius-inner, 3px);
+  border-bottom-left-radius: var(--border-radius-inner, 3px);
+  box-shadow: var(--shadow-inner, 0px 1px 1px 1px rgba(0, 0, 0, 0.18));
+}
+
+/* Time Machine Status -- 3rd from right */
+.pecantmutil {
+  font: var(--font-size, 12px) var(--font, Menlo);
+  color: var(--foreground-battery, var(--background, #eee));
+  display: inline-block;
+  position: absolute;
+  background-color: var(--background-battery, var(--color5, #222));
+  opacity: var(--opacity-inner, 1);
+  padding: 0 var(--text-padding, 1ch);
+  top: var(--alignment-top, 0);
+  right: 0;
+  bottom: var(--alignment-bottom, auto);
+  left: auto;
+  margin-top: calc(var(--padding-top, 10px) + var(--border, 3px));
+  margin-right: calc(
+    var(--padding-right, 10px) + calc(var(--text-padding, 1ch) * 6) + 9ch +
       calc(var(--border, 3px) * 2)
   );
   margin-bottom: calc(var(--padding-top, 10px) + var(--border, 3px));
